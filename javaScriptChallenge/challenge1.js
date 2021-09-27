@@ -3,3 +3,12 @@ function difference(x) {
   return Math.abs(x-reversedX);
 
 }
+function beautifulDays(i, j, k) {
+  var count = 0;
+  for (var x = i; x <= j; x++) {
+  if (difference(x) % k === 0) {
+  count++;
+  }
+  }
+  return count;
+  } 
